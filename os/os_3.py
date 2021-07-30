@@ -1,3 +1,6 @@
+
+# 한 줄씩 실행 shift + Enter
+
 import os
 
 access_F = os.access('pickle', os.F_OK) #F_OK : 해당 path의 존재 여부 확인
@@ -15,7 +18,11 @@ os.makedirs('test1/ex1/ex2/empty') # 같은 디렉토리 생성 시 오류 발�
 
 os.remove('test.txt') # 파일 삭제
 
-os.unlink('empty.txt') #파일 삭제
+os.unlink('empty.txt') #파일 삭제   
+
+os.rmdir('test') # 디렉토리 삭제
+
+os.removedirs('test1/ex1/ex2/empty') # 재귀적 디렉토리 삭제
 
 
 
