@@ -7,3 +7,6 @@ os_2
 
 os_3
 - assess[F_OK/R_OK/W_OK/X_OK]
+- mkdir / makedirs
+- remove / unlink
+- rmdir / removedirs

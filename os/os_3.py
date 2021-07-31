@@ -24,9 +24,7 @@ os.rmdir('test') # 디렉토리 삭제
 
 os.removedirs('test1/ex1/ex2/empty') # 재귀적 디렉토리 삭제
 
-
-
-
+os.rename('empty.txt', 'ex.txt') # 파일, 디렉토리 이름 변경
 
 
 
