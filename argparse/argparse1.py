@@ -1,11 +1,11 @@
 import argparse
 
-parser = argparse.ArgumentParser(description='Process some integers.')
-parser.add_argument('integers', metavar='N', type=int, nargs='+',
-                    help='an integer for the accumulator')
-parser.add_argument('--sum', dest='accumulate', action='store_const',
-                    const=sum, default=max,
-                    help='sum the integers (default: find the max)')
+parser = argparse.ArgumentParser(description='사용법 테스트')
+
+parser.add_argument('--target', required=True , help='어느 것을 요구하냐')
+parser.add_argument('--env', required=False, default='dev', help='실행환경은 뭐냐')
 
 args = parser.parse_args()
-print(args.accumulate(args.integers)) 
+
+print(args.target)
+print(args.env)
