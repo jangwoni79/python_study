@@ -26,6 +26,8 @@ os.removedirs('test1/ex1/ex2/empty') # 재귀적 디렉토리 삭제
 
 os.rename('empty.txt', 'ex.txt') # 파일, 디렉토리 이름 변경 및 이동
 
+os.rename('empty\\empty1','empty\\empty3')
+
 os.renames('ex.txt', 'test/test2.txt') #파일, 디렉토리 이름 변경 및 이동
 
 os.stat('empty.txt') #path에 해당하는 정보를 얻어옵니다.
